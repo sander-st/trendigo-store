@@ -55,7 +55,7 @@ export const CartPage: React.FC = () => {
         />
         <meta property="og:title" content="Tu Carrito | TRENDIGO" />
         <meta property="og:description" content="Revisa los productos en tu carrito antes de completar tu compra." />
-        <meta property="og:url" content="https://trendigo.com/cart" />
+        <meta property="og:url" content="https://trendigostore.netlify.app/cart" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
@@ -92,7 +92,7 @@ export const CartPage: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 max-w-md mx-auto text-center">
+            className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 max-w-md mx-auto text-center">
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
               Tu carrito está vacío. ¡Es hora de llenarlo con estilo!
             </p>

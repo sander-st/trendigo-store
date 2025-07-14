@@ -4,7 +4,7 @@
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-  name: "shopp";
+  name: "shopLight";
   default: true;
   prefersdark: false;
   color-scheme: "light";
@@ -31,6 +31,56 @@
   --radius-selector: 1rem;
   --radius-field: 0.5rem;
   --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@plugin "daisyui/theme" {
+  name: "shopDark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+
+  /* Bases */
+  --color-base-100: oklch(25.33% 0.016 252.42);
+  --color-base-200: oklch(23.26% 0.014 253.1);
+  --color-base-300: oklch(21.15% 0.012 254.09);
+  --color-base-content: oklch(97.807% 0.029 256.847);
+
+  /* Tus colores principales */
+  --color-primary: oklch(0.8528 0.1452 85.83); /* vibrante, cálido, protagoniza */
+  --color-primary-content: oklch(98% 0.02 90); /* contraste claro sobre primario */
+
+  --color-secondary: oklch(0.6533 0.18509 250.035); /* secundario, frío, para detalles */
+  --color-secondary-content: oklch(96% 0.02 255); /* contraste claro sobre secundario */
+
+  /* Complementarios */
+  --color-accent: oklch(0.75 0.16 200); /* toque frío o neutro */
+  --color-accent-content: oklch(98% 0.02 205); /* contraste claro */
+
+  --color-neutral: oklch(14% 0.005 285.823);
+  --color-neutral-content: oklch(92% 0.004 286.32);
+
+  /* Mensajes: info, success, warning, error - armonizados */
+  --color-info: oklch(74% 0.16 232.661);
+  --color-info-content: oklch(15% 0.03 240);
+
+  --color-success: oklch(76% 0.177 163.223);
+  --color-success-content: oklch(15% 0.03 160);
+
+  --color-warning: oklch(82% 0.189 84.429);
+  --color-warning-content: oklch(20% 0.04 80);
+
+  --color-error: oklch(71% 0.194 13.428);
+  --color-error-content: oklch(15% 0.03 10);
+
+  /* Bordes, radios y detalles UI */
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
   --size-selector: 0.25rem;
   --size-field: 0.25rem;
   --border: 1px;

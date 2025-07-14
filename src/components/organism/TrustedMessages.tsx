@@ -7,7 +7,7 @@ const trusteds = [
   {
     icon: Truck,
     title: "Entrega rápida",
-    description: "24-48h en Lima Metropolitana",
+    description: "24-48h en todo el Perú",
   },
   {
     icon: ShieldCheck,

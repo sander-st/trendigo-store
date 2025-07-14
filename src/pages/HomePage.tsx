@@ -183,8 +183,8 @@ export const HomePage: React.FC = () => {
           content="Explora nuestra colección completa de moda deportiva, urbana y accesorios."
         />
         <meta property="og:image" content={heroImage} />
-        <meta property="og:url" content="https://trendigo.com/" />
-        <link rel="canonical" href="https://trendigo.com/" />
+        <meta property="og:url" content="https://trendigostore.netlify.app/" />
+        <link rel="canonical" href="https://trendigostore.netlify.app/" />
       </Helmet>
 
       <HeroSection />

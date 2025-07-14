@@ -3,7 +3,6 @@ import { useForm } from "react-hook-form";
 import { customerSchema, type CustomerFormData } from "../../types/customer";
 import { Button } from "../common/Button";
 import { Input } from "../common/Input";
-import { Select } from "../common/Select";
 import { Textarea } from "../common/Textarea";
 
 interface CustomerFormProps {
@@ -20,17 +19,9 @@ export const CustomerForm: React.FC<CustomerFormProps> = ({ onSubmit, isLoading 
     resolver: zodResolver(customerSchema),
   });
 
-  const countryOptions = [
-    { value: "Peru", label: "Perú" },
-    { value: "Chile", label: "Chile" },
-    { value: "Colombia", label: "Colombia" },
-    { value: "Mexico", label: "México" },
-    // Agrega más países según sea necesario
-  ];
-
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">Datos del Cliente</h2>
+    <form onSubmit={handleSubmit(onSubmit)} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Datos del Cliente</h2>
 
       <Input
         id="fullName"
@@ -54,10 +45,12 @@ export const CustomerForm: React.FC<CustomerFormProps> = ({ onSubmit, isLoading 
         {...register("email")}
         error={errors.email?.message}
       />
-      <Select
+      <Input
         id="country"
         label="País"
-        options={countryOptions}
+        defaultValue="Perú"
+        placeholder="Perú"
+        disabled
         {...register("country")}
         error={errors.country?.message}
       />
@@ -96,7 +89,7 @@ export const CustomerForm: React.FC<CustomerFormProps> = ({ onSubmit, isLoading 
         {...register("additionalNotes")}
       />
 
-      <Button type="submit" className="w-full mt-6" disabled={isLoading}>
+      <Button type="submit" className="w-full mt-6 btn-success" disabled={isLoading}>
         {isLoading ? "Enviando Pedido..." : "Enviar Pedido por WhatsApp"}
       </Button>
     </form>

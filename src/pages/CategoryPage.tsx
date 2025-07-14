@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { Helmet } from "react-helmet-async";
 import type { ClothingProductData } from "../types/product";
@@ -137,7 +137,7 @@ export const CategoryPage: React.FC = () => {
         <meta name="description" content={currentCategory.description} />
         <meta property="og:title" content={`${currentCategory.name} | TRENDIGO`} />
         <meta property="og:description" content={currentCategory.description} />
-        <meta property="og:url" content={`https://trendigo.com/category/${categorySlug}`} />
+        <meta property="og:url" content={`https://trendigostore.netlify.app/category/${categorySlug}`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
 
@@ -184,19 +184,19 @@ export const CategoryPage: React.FC = () => {
 
             {/* Categorías relacionadas */}
             <div className="mt-12">
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">También te puede interesar</h3>
+              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200 mb-4">También te puede interesar</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {categoriesData
                   .filter((cat) => cat.slug !== categorySlug)
                   .slice(0, 4)
                   .map((category) => (
-                    <a
+                    <Link
                       key={category.slug}
-                      href={`/category/${category.slug}`}
+                      to={`/category/${category.slug}`}
                       className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
                       <div className="font-medium">{category.name}</div>
                       <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">{category.description}</div>
-                    </a>
+                    </Link>
                   ))}
               </div>
             </div>

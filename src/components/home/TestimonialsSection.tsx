@@ -27,7 +27,7 @@ export const TestimonialsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-50 dark:bg-gray-900">
+    <section className="py-12">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-3">Lo Que Dicen Nuestros Clientes</h2>

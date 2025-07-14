@@ -18,7 +18,7 @@ const App = () => {
     <HelmetProvider>
       <CartProvider>
         <BrowserRouter>
-          <div className="flex flex-col min-h-screen bg-gray-100 font-montserrat">
+          <div className="flex flex-col min-h-screen bg-gray-50 dark:bg-gray-900 font-montserrat">
             <Header />
             <main className="flex-grow">
               <Routes>

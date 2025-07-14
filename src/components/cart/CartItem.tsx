@@ -42,7 +42,7 @@ export const CartItemComponent: React.FC<CartItemProps> = ({ item }) => {
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
       className={`
-        flex flex-col sm:flex-row md:grid md:grid-cols-4 md:items-center bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-5 md:p-6 gap-6 relative
+        flex flex-col sm:flex-row md:grid md:grid-cols-4 md:items-center bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-5 md:p-6 gap-6 relative
         ${isOutOfStock ? "opacity-50" : ""}
       `}>
       {/* Columna 1: Imagen del producto y enlace */}

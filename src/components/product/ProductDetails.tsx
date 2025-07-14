@@ -59,7 +59,7 @@ export const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg p-6 md:p-8 max-w-7xl mx-auto">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 md:p-8 max-w-7xl mx-auto">
       {/* Encabezado emocional */}
       <div className="bg-gradient-to-r from-primary/10 to-secondary/10 p-4 rounded-lg mb-8 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
@@ -201,10 +201,10 @@ export const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
                 </button>
               ))}
             </div>
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+            {/* <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
               ¿No estás seguro de tu talla?{" "}
               <button className="text-primary font-medium hover:underline">Guía de tallas</button>
-            </p>
+            </p> */}
           </div>
 
           {/* Stock con urgencia */}
@@ -248,7 +248,7 @@ export const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           {/* Botón con llamado a la acción emocional */}
           <Button
             onClick={handleAddToCart}
-            className="w-full py-4 text-lg font-bold shadow-lg transform hover:scale-[1.02] transition-transform"
+            className="btn-primary w-full py-4 text-lg font-bold shadow-lg transform hover:scale-[1.02] transition-transform"
             disabled={variantStock === 0}>
             {variantStock > 0 ? (
               <div className="flex items-center justify-center gap-2">
@@ -272,7 +272,7 @@ export const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
             </div>
             <div className="flex items-center gap-2 text-green-600">
               <CheckCircle className="w-5 h-5" />
-              <span className="text-sm">Garantía de 30 días</span>
+              <span className="text-sm">Garantía de 7 días</span>
             </div>
           </div>
 

@@ -24,7 +24,7 @@ export const CartSummary: React.FC<CartSummaryProps> = ({ total, totalProductDis
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6 border border-primary/20">
+      className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 border border-primary/20">
       <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6 pb-2 border-b border-gray-200 dark:border-gray-700">
         Resumen de Compra
       </h2>

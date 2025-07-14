@@ -49,7 +49,7 @@ export const ProductDetailPage: React.FC = () => {
         <meta property="og:title" content={`${product.name} | TRENDIGO`} />
         <meta property="og:description" content={product.shortDescription} />
         <meta property="og:image" content={product.imageUrl} />
-        <meta property="og:url" content={`https://trendigo.com/product/${product.id}`} />
+        <meta property="og:url" content={`https://trendigostore.netlify.app/product/${product.id}`} />
         <meta name="twitter:card" content="summary_large_image" />
         {/* JSON-LD Schema */}
         <script type="application/ld+json">
@@ -63,7 +63,7 @@ export const ProductDetailPage: React.FC = () => {
             brand: { "@type": "Brand", name: "TRENDIGO" },
             offers: {
               "@type": "Offer",
-              url: `https://trendigo.com/product/${product.id}`,
+              url: `https://trendigostore.netlify.app/product/${product.id}`,
               priceCurrency: "PEN",
               price: product.price.toFixed(2),
               itemCondition: "https://schema.org/NewCondition",

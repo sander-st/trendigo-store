@@ -55,7 +55,9 @@ export const Header: React.FC = () => {
   );
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50 w-full" aria-label="Cabecera principal">
+    <header
+      className="shadow-md sticky top-0 z-50 w-full backdrop-blur-lg bg-gray-50/50 dark:bg-gray-900/50"
+      aria-label="Cabecera principal">
       <nav className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -82,7 +84,7 @@ export const Header: React.FC = () => {
                       ${
                         isActive(item.href, item.exact)
                           ? "text-primary font-bold after:absolute after:bottom-0 after:left-3 after:right-3 after:h-0.5 after:bg-primary"
-                          : "text-gray-700 hover:text-primary"
+                          : "text-gray-700 dark:text-gray-200 hover:text-primary"
                       }`}
                     aria-current={isActive(item.href, item.exact) ? "page" : undefined}>
                     {item.name}
@@ -96,7 +98,7 @@ export const Header: React.FC = () => {
           <div className="flex items-center">
             <Link
               to="/cart"
-              className="relative p-2 rounded-full text-gray-700 hover:text-primary transition-colors"
+              className="relative p-2 rounded-full text-gray-700 dark:text-gray-200 hover:text-primary transition-colors"
               aria-label={`Ver carrito de compras (${cartItemCount} items)`}>
               <ShoppingCart className="w-6 h-6" />
               {cartItemCount > 0 && (
@@ -109,7 +111,7 @@ export const Header: React.FC = () => {
             {/* Botón menú móvil */}
             <button
               type="button"
-              className="ml-4 md:hidden p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none"
+              className="ml-4 md:hidden p-2 rounded-md text-gray-700 dark:text-gray-200 hover:text-primary hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
               onClick={toggleMenu}
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
@@ -126,7 +128,7 @@ export const Header: React.FC = () => {
         id="mobile-menu"
         className={`md:hidden transition-all duration-300 ease-in-out overflow-hidden
           ${isMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}>
-        <ul className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
+        <ul className="px-2 pt-2 pb-3 space-y-1 shadow-lg">
           {NAV_ITEMS.map((item) => (
             <li key={item.name}>
               <Link
@@ -135,7 +137,7 @@ export const Header: React.FC = () => {
                   ${
                     isActive(item.href, item.exact)
                       ? "bg-primary-light text-primary font-bold"
-                      : "text-gray-700 hover:bg-gray-50"
+                      : "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-800"
                   }`}
                 aria-current={isActive(item.href, item.exact) ? "page" : undefined}
                 onClick={closeMenu}>

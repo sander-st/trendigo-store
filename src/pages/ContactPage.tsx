@@ -120,12 +120,12 @@ export const ContactPage: React.FC = () => {
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6 text-center">📩 Contáctanos</h1>
 
-        <p className="text-center text-gray-700 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+        <p className="text-center text-gray-700 dark:text-gray-200 mb-8 max-w-2xl mx-auto">
           Estaremos encantados de ayudarte a resolver cualquier duda o consulta sobre nuestros productos o pedidos.
           Responderemos lo antes posible, incluso fuera de horario cuando sea posible.
         </p>
 
-        <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 max-w-2xl mx-auto">
+        <div className="bg-white dark:bg-gray-800/50 rounded-lg shadow-md p-6 max-w-2xl mx-auto">
           <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Envíanos un Mensaje</h2>
 
           <p className="text-gray-700 dark:text-gray-300 mb-4">
