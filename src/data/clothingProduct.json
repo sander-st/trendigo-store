@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1",
+    "name": "Conjunto Deportivo TRENDIGO Fit Dry",
+    "category": "Conjuntos Deportivos",
+    "price": 89.99,
+    "regularPrice": 119.99,
+    "isOnSale": true,
+    "imageUrl": "https://i.ibb.co/GfrDjDHP/Whats-App-Image-2024-12-05-at-8-47-59-AM-1-Photoroom.webp",
+    "hoverImageUrl": "https://i.ibb.co/ymccrs7c/Whats-App-Image-2024-12-05-at-8-47-59-AM-3-Photoroom.webp",
+    "images": [
+      "https://i.ibb.co/GfrDjDHP/Whats-App-Image-2024-12-05-at-8-47-59-AM-1-Photoroom.webp",
+      "https://i.ibb.co/ymccrs7c/Whats-App-Image-2024-12-05-at-8-47-59-AM-3-Photoroom.webp",
+      "https://i.ibb.co/My8Y2Z56/Whats-App-Image-2024-12-05-at-8-47-59-AM-Photoroom.webp",
+      "https://i.ibb.co/n803w1Ks/black.webp"
+    ],
+    "imagesCart": {
+      "blanco": "https://i.ibb.co/GfrDjDHP/Whats-App-Image-2024-12-05-at-8-47-59-AM-1-Photoroom.webp",
+      "negro": "https://i.ibb.co/n803w1Ks/black.webp",
+      "gris": "https://i.ibb.co/My8Y2Z56/Whats-App-Image-2024-12-05-at-8-47-59-AM-Photoroom.webp"
+    },
+    "description": "Conjunto deportivo para hombre diseñado para entrenar cómodamente, tejido spandex de secado rápido. Ajuste semi-pegado que marca los músculos, sin deformarse ni transparentar. Ligero y fresco, ideal para verano.",
+    "shortDescription": "Conjunto deportivo de secado rápido, ligero y transpirable.",
+    "specifications": {
+      "Material": "Spandex",
+      "Temporada": "Verano",
+      "Cuidados": "Lavar a máquina, no usar blanqueador",
+      "Marca": "TRENDIGO",
+      "Estilo": "Semi-pegado, marca los músculos",
+      "Transpirable": true,
+      "Secado rápido": true,
+      "No se deforma": true,
+      "No transparenta": true
+    },
+    "availableColors": ["Negro", "Gris", "Blanco"],
+    "availableSizes": ["S", "M", "L", "XL"],
+    "stock": 50,
+    "variants": [
+      { "color": "Negro", "size": "M", "stock": 8 },
+      { "color": "Negro", "size": "L", "stock": 6 },
+      { "color": "Gris", "size": "M", "stock": 5 },
+      { "color": "Blanco", "size": "S", "stock": 2 }
+    ],
+    "rating": 4.5,
+    "reviewCount": 86,
+    "testimonials": [
+      { "name": "Juan P.", "comment": "Excelente calidad y llegó rápido", "rating": 4.8 },
+      { "name": "María L.", "comment": "Me encanta cómo me queda, súper cómodo", "rating": 4.7 },
+      { "name": "Carlos R.", "comment": "Buen tejido, transpira muy bien", "rating": 4.6 }
+    ],
+    "createdAt": "2024-12-05T10:47:59.000Z"
+  }
+]
